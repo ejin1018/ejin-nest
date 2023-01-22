@@ -1,0 +1,1158 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* initial css */
+* { 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a,a:link {
+    display:block;
+    text-decoration: none;
+}
+textarea{
+    resize:none;
+}
+.skip-menu li a{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    line-height: 0;
+    z-index: 999;
+}
+.skip-menu li a:focus{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    background: #BAAD9C;
+    color: #fff;
+}
+
+/* common style */
+.section_title_en{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:45px;
+    font-weight:500;
+    color:#7e7366;
+}
+.section_title_hide{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.promo_wrap, .acmd_wrap, .dining_wrap, .location_wrap{
+    width:90%;
+    margin:0 auto 150px;
+}
+
+/* header */
+.header_container{
+    width:100%;
+    height:50px;
+    position:fixed;
+    top:30px;
+    left:0;
+    z-index: 999;
+}
+.menu_btn{
+    display:block;
+    width:30px;
+    height:25px;
+    position:relative;
+    top:0;
+    left:50px;
+    background:transparent;
+    border:none;
+    cursor: pointer;
+}
+.menu_btn span{
+    display:block;
+    width:100%;
+    height:2px;
+    border-radius:5px;
+    background:#7e7366;
+}
+.menu_btn .top_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top .25s ease .4s, transform .2s ease;
+}
+.menu_btn .mid_line {
+    position: absolute;
+    top: 46.8%;
+    left: 0;
+    transform: scale(1);
+    transition: all .4s;
+}
+.menu_btn .bot_line {
+    position: absolute;
+    top: 92.2%;
+    left: 0;
+    transition: top .25s ease .4s, transform .2s ease;
+}
+.menu_active .top_line {
+    top: 46.8%;
+    transform: rotate(135deg) scaleX(1.25);
+    transform-origin: center;
+    transition: top .25s ease, transform .2s ease .4s;
+}
+.menu_active .mid_line {
+    transform: scale(0);
+    transform-origin: center;
+    transition: all .4s ease .25s;
+}
+.menu_active .bot_line {
+    top: 46.8%;
+    transform: rotate(45deg) scaleX(1.25);
+    transform-origin: center;
+    transition: top .25s ease, transform .2s ease .4s;
+}
+.logo{
+    max-width:9%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.logo_btn img{
+    width:100%;
+    display: block;
+}
+.gnb_bar{
+    position:absolute;
+    top:0;
+    right:50px;
+}
+.gnb_bar a{
+    float:left;
+    margin-left:20px;
+    font-size:12px;
+    font-weight: 500;
+    color:#7c7367;
+}
+
+/* main */
+.main_wrap{
+    position:relative;
+    top:0;
+    left:0;
+    height:100vh;
+    background:url('/img/main_pic.jpeg') no-repeat;
+    background-size:cover;
+    background-position:left 0 bottom 20%;
+}
+
+/* main - menu_container */
+.menu_container{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background:#fff;
+    padding:10% 8% 0;
+    z-index: 99;
+    display:none;
+}
+.large_menu_list{
+    width:30%;
+    float:left;
+}
+.large_menu_list li{
+    display:inline-block;
+    width:100%;
+    margin-bottom:25px;
+}
+.large_menu{
+    width:100%;
+    float:left;
+    padding-bottom:5px;
+    border-bottom:solid 1px #f9f6f0;
+    font-size:25px;
+    font-weight:300;
+    color:#483f35;
+}
+.large_menu span{
+    float:right;
+    font-size:16px;
+    line-height:31px;
+    color:#acacac;
+}
+.small_menu_area{
+    width:28%;
+    float:left;
+    margin-left:7%;
+    position:relative;
+    top:0;
+    left:0;
+}
+.small_menu_area > li{
+    display:inline-block;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.small_menu_list{
+    width:100%;
+    display: none;
+}
+.small_menu_list_on{
+    display:block;
+}
+.small_menu_list li{
+    margin-bottom:15px;
+}
+.small_menu{
+    font-size:15px;
+    font-weight: 300;
+    color:#7e7366;
+    padding-bottom: 10px;
+    border-bottom:solid 0.5px #7e7366;
+}
+.small_menu span{
+    float:right;
+    line-height:18px;
+}
+.other_menu_list{
+    position:absolute;
+    bottom:8%;
+}
+.other_menu{
+    margin-bottom:10px;
+    font-size: 15px;
+    color: #7e7366;
+}
+.contact_us{
+    position:absolute;
+    right:8%;
+    bottom:8%;
+    width:30%;
+}
+.contact_us_title{
+    margin-bottom:20px;
+    font-size:15px;
+    color:#483f35;
+}
+.contact_us_list > li{
+    display:inline-block;
+    width:100%;
+    margin-bottom:3px;
+}
+.contact_where{
+    width:70%;
+    float:left;
+    font-size:12px;
+    color:#483f35;
+}
+.contact_number{
+    width:30%;
+    float: left;
+    font-size:12px;
+    font-weight:300;
+    color:#483f35;
+}
+
+/* main - welcome_container */
+.welcome_container{
+    width:100%;
+    height:100%;
+}
+.welcome_en{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size:60px;
+    font-weight:600;
+    color:#fff;
+    text-align: center;
+}
+.welcome_ko{
+    position:absolute;
+    left:50%;
+    top:45.5%;
+    transform: translateX(-50%);
+    font-size:16px;
+    font-weight:100;
+    color:#fff;
+    text-align:center;
+}
+.count_container{
+    width: 21%;
+    height: auto;
+    position: absolute;
+    bottom: 44%;
+    left: 55%;
+    overflow: hidden;
+}
+.count_choice_box{
+    display: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    padding: 0;
+    background: #fff;
+}
+.count_choice_box_on{
+    display: block;
+    height: auto;
+    padding: 15% 15% 17%;
+}
+.count_line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    overflow: hidden;
+    border-bottom: solid 0.5px #483f35;
+}
+.count_title, .result_number, count_button{
+    float: left;
+}
+.count_title{
+    width: 20%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #483f35;
+}
+.result_number{
+    font-size: 16px;
+    font-weight: 500;
+    color: #483f35;
+}
+.count_button{
+    width: 18px;
+    height: 9px;
+    border: none;
+    cursor: pointer;
+}
+.minus_button{
+    margin-right: 8px;
+    background: url('/img/down.png') no-repeat;
+    background-size: contain;
+}
+.plus_button{
+    background: url('/img/up.png') no-repeat;
+    background-size: contain;
+}
+.count_guide{
+    margin: 3px 0 15px;
+    font-size: 10px;
+    font-weight: 100;
+    color: #968e84;
+}
+.more_guide{
+    margin-top: 35px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #968e84;
+    text-align: center;
+}
+/* datepicker custom - start*/
+body .daterangepicker{
+    border: none;
+    border-radius: 0;
+    padding: 30px 35px;
+}
+body .daterangepicker th.month{
+    font-size: 14px;
+    font-weight: 300;
+    color: #483f35;
+}
+body .daterangepicker .drp-calendar.right{
+    padding: 8px 8px 8px 20px;
+}
+body .daterangepicker .calendar-table .next span, body .daterangepicker .calendar-table .prev span{
+    border: solid #483f35;
+    border-width: 0 1px 1px 0;
+}
+body .daterangepicker td.active, body .daterangepicker td.active:hover{
+    background-color: #7e7366;
+}
+body .daterangepicker td.in-range{
+    background-color: #e1dedb;
+    color: #483f35;
+}
+body .daterangepicker .calendar-table th{
+    font-weight: 400;
+    padding-bottom: 5px;
+} 
+body .daterangepicker .calendar-table td{
+    font-weight: 200;
+}
+body .daterangepicker .drp-buttons .btn{
+    background-color: #e1dedb;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 12px;
+}
+body .daterangepicker .drp-buttons .btn-primary{
+    background-color: #7e7366;
+    font-weight: 500;
+    color: #fff;
+}
+/* datepicker custom - end */
+.reserv_bar{
+    display:inline-block;
+    width:70%;
+    height:60px;
+    position:absolute;
+    top:57%;
+    left:50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    background:rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+#reserv_type{
+    width:12%;
+    height: 60px;
+    float:left;
+    font-size:16px;
+    font-weight:500;
+    color:#483f35;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+}
+.reserv_box{
+    width:76%;
+    float:left;
+    position:relative;
+    top:0;
+    left:0;
+}
+.reserv_box_item{
+    width:100%;
+    position:absolute;
+    top:60px;
+    left:0;
+    opacity: 0;
+}
+.reserv_box_on{
+    top: 0px;
+    opacity: 1;
+}
+.room_date, .room_people, .dining_date, .dining_people, .roomservice_date{
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.room_date{
+    width:60%;
+    padding-left:5%;
+    float: left;
+}
+.room_people{
+    width:40%;
+    padding:0 5%;
+    float: left;
+}
+.dining_date{
+    width:55%;
+    padding-left:5%;
+    float: left;
+}
+.dining_people{
+    width:45%;
+    padding:0 5%;
+    float: left;
+}
+.roomservice_date{
+    padding:0 5%;
+}
+.horizontal_line{
+    width:20px;
+    height:1px;
+    background:#958e85;
+}
+.vertical_line{
+    width:1px;
+    height:16px;
+    float:left;
+    background:#958e85;
+}
+.check_type{
+    font-size:12px;
+    font-weight: 600;
+    color:#6e6e6e;
+}
+.check_result{
+    font-size:18px;
+    font-weight: 600;
+    color:#483f35;
+}
+.check_date{
+    height: 100%;
+    font-size:18px;
+    font-weight: 600;
+    color:#483f35;
+    text-align: center;
+    border:none;
+    background: transparent;
+}
+#check_room_date, #check_dining_date{
+    width: 70%;
+}
+#check_rservice_date1, #check_rservice_date2{
+    width: auto;
+}
+
+.reservation_btn{
+    width:12%;
+    float:right;
+    font-size:16px; 
+    font-weight:500;
+    color:#fff;
+    line-height: 60px;
+    border:none;
+    background:#483f35;
+    transition: all .3s;
+    cursor: pointer;
+}
+.reservation_btn:hover{
+    background: #fff;
+    color: #483f35;
+}
+
+/* main - scroll */
+.scroll_down{
+    display:block;
+    width:20px;
+    height:60px;
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform: translateX(-50%);
+    background: url(/img/scroll_down.png) no-repeat;
+    background-size:contain;
+}
+.scroll_top{
+    display:block;
+    width:20px;
+    height:25px;
+    position:fixed;
+    bottom:20px;
+    right:2.5%;
+    background:url(/img/scroll_top.png) no-repeat;
+    background-size:contain;
+}
+
+/* about */
+.about_wrap{
+    padding: 160px 0 180px;
+    text-align: center;
+}
+.about_title{
+    margin:4px 0 40px;
+    font-size:18px;
+    font-weight: 500;
+    color:#7e7366;
+}
+.about_text{
+    font-size:15px;
+    font-weight:300;
+    color: #968e84;
+    line-height: 1.5;
+}
+
+/* promotions */
+.promo_container{
+    margin-top:30px;
+    overflow: hidden;
+}
+.promo_room{
+    width:60%;
+    float: left;
+    padding-right: 5%;
+    border-right:solid 1px #BAAD9C;
+}
+.promo_room_over{
+    width:100%;
+    margin-bottom:30px;
+}
+.promo_over_img{
+    width: 100%;
+    height: 240px;
+    background: url(/img/promo00.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center right 30%;
+}
+.promo_room .promo_base{
+    width: 49%;
+    margin-right: 2%;
+    float:left
+}
+.promo_room .promo_base:last-child{
+    margin-right: 0;
+}
+.promo_base_img{
+    width: 100%;
+    height: 240px;
+    background:wheat;
+}
+.promo_base_img01{
+    background: url(/img/promo01.jpeg) no-repeat;
+    background-size: cover;
+}
+.promo_base_img02{
+    background: url(/img/promo02.jpeg) no-repeat;
+    background-size: cover;
+}
+.promo_base_img03{
+    background: url(/img/promo03.jpeg) no-repeat;
+    background-size: cover;
+}
+.promo_base_img04{
+    background: url(/img/promo04.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo_dining{
+    width:40%;
+    float: left;
+    padding-left: 5%;
+}
+.promo_dining .promo_base{
+    margin-bottom:30px;
+}
+.promo_title_box{
+    width: 100%;
+    margin: 20px 0 10px;
+    overflow: hidden;
+}
+.promo_title{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 20px;
+    float: left;
+    font-size:16px;
+    font-weight: 600;
+    color:#7e7366;
+}
+.promo_title::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -10px;
+    width: 1px;
+    height: 15px;
+    background: #acacac;
+}
+.promo_title_sub{
+    float: left;
+    font-size:15px;
+    font-weight: 400;
+    color:#7e7366;
+}
+.promo_detail{
+    font-size: 14px;
+    font-weight: 300;
+    color: #968e84;
+}
+
+/* accommodation */
+.acmd_container{
+    height: 80vh;
+}
+.acmd_left{
+    width:25%;
+    height: 100%;
+    float:left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.type_btn_list{
+    width:100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.type_btn_list label{
+    display: block;
+    float:left;
+    cursor: pointer;
+}
+.type_btn{
+    display:block;
+    float: left;
+    font-size:18px;
+    font-weight:300;
+    color:#acacac;
+}
+.type_btn_list input[type="radio"]{
+    display:none;
+}
+.type_btn_list input[type="radio"]:checked + span {
+    font-weight:500;
+    color:#7e7366;
+}
+.type_btn_list > .vertical_line{
+    margin:4px 15px 0;
+}
+.acmd_info_viewbox{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.acmd_info_list{
+    width: 100%;
+    position: relative;
+    top:0;
+    left:0;
+}
+.acmd_info{
+    position: absolute;
+    bottom:-30px;
+    left:0;
+    opacity: 0;
+    transition: all .6s;
+    transition-delay: .2s;
+}
+.acmd_info_on{
+    bottom: 0;
+    opacity:1;
+}
+.type_info_box{
+    width: 100%;
+    margin-bottom:15px;
+    float: left;
+}
+.type_name{
+    margin-bottom:5px;
+    font-size: 13px;
+    font-weight: 300;
+    color:#acacac;
+}
+.type_value{
+    font-size: 14px;
+    font-weight: 400;
+    color:#7e7366;
+}
+
+.acmd_right{
+    width:72%;
+    height: 100%;
+    margin-left: 3%;
+    float:left;
+    position: relative;
+    top:0;
+    left:0;
+}
+.acmd_right .acmd_pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+    border-radius: 48% 48% 0 0;
+    opacity: 0;
+    transition: top .6s;
+}
+.acmd_right .acmd_pic_on{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+}
+.pic_dim{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px -120px 40px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.acmd_pic_item img{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.swiper-slide > img{
+    width: 100%;
+}
+.acmd_pic_title{
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size:35px;
+    font-weight:500;
+    color:#fff;
+    z-index: 2;
+}
+.acmd_right > .acmd_pic > .acmd_scrollbar{
+    width: 50%;
+    height: 1px;
+    left: 8%;
+    bottom: 8%;
+    background: rgba(255,255,255,0.3);
+}
+.acmd_scrollbar .swiper-scrollbar-drag{
+    height: 5px;
+    top: -5px;
+    border-radius: 0;
+    background: #fff;
+}
+.acmd_list_bar{
+    width: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    overflow: hidden;
+    z-index: 2;
+}
+.list_bar_standard li, .list_bar_deluxe li {
+    width: 33.333%;
+    float: left;
+}
+.list_bar_suite li{
+    width: 25%;
+    float: left;
+}
+.acmd_list_bar_btn{
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}
+.acmd_pic .acmd_next_btn, .acmd_pic .acmd_prev_btn{
+    top: auto;
+    bottom: 8%;
+    color: #fff;
+}
+.acmd_pic .acmd_next_btn::after{
+    content: url(/img/acmd_next_btn.png);
+}
+.acmd_pic .acmd_prev_btn::after{
+    content: url(/img/acmd_prev_btn.png);
+}
+.acmd_choice{
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+    z-index: 2;
+}
+.view_detail, .view_reserv{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 15px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}
+.view_detail{
+    border: solid 1px #acacac;
+    color:#acacac;
+}
+.view_reserv{
+    border: solid 1px #fff;
+    color:#fff;
+}
+
+/* pride */
+.pride_wrap{
+    width: 100%;
+    margin: 200px auto;
+    background: url(/img/pride00.jpeg) no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset -800px 0px 60px 55px rgb(0, 0, 0, 0.6);
+}
+.pride_container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.pride_title_en{
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+.pride_title_ko{
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: right;
+}
+.pride_text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1.5;
+    text-align: right;
+}
+.pride_icon{
+    text-align: right;
+}
+.designhotel_logo{
+    max-width: 100px;
+}
+
+/* dining */
+.dining_container{
+    width: 100%;
+    overflow: hidden;
+}
+.dining_pic_list, .dining_right{
+    width: 48.5%;
+    height: 80vh;
+    float: left;
+}
+.dining_pic_list{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 3%;
+}
+.dining_pic_list_item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.dining_pic_item_on{
+    opacity: 1;
+}
+.dining_pic_platz{
+    background: url(/img/dining00.jpeg) no-repeat;
+    background-size: cover;
+}
+.dining_pic_kunst{
+    background: url(/img/dining01.jpeg) no-repeat center;
+    background-size: cover;
+}
+.dining_pic_luft{
+    background: url(/img/dining02.jpeg) no-repeat left center;
+    background-size: cover;
+}
+.dining_pic_room{
+    background: url(/img/dining03.jpeg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.dining_right{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #7e7366;
+}
+.dining_info_list{
+    position: relative;
+    top: 7%;
+    left: 0;
+}
+.dining_info{
+    position: absolute;
+    top: 10px;
+    left: 12%;
+    opacity: 0;
+    transition: top .4s, opacity .3s .3s;
+    background: #7e7366;
+}
+.dining_info_list .dining_info_on{
+    top:0;
+    opacity: 1;
+}
+.dining_name{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+}
+.dining_name::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 13px;
+    left: -30px;
+    display: block;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+.dining_place_detail{
+    width: 60%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+.dining_place_number{
+    font-size: 13px;
+    font-weight: 100;
+    color: #fff;
+}
+.dining_type_btn{
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+}
+.dining_type_btn li {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+}
+.dining_type_btn li::before{
+    content: '';
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    display: block;
+    background: #bcad9a;
+}
+.dining_type_btn li .place_btn{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #bcad9a;
+}
+.dining_type_btn .dining_type_on::before{
+    background: #fff;
+}
+.dining_type_btn .dining_type_on .place_btn{
+    color: #fff;
+}
+.dining_deco{
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 125px;
+    font-weight: 500;
+    color: #968e84;
+    opacity: 0.3; 
+}
+
+/* location */
+.location_text{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #7e7366;
+}
+.location_text_tel{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #7e7366;
+}
+.location_map{
+    height: 400px;
+    margin-top: 30px;
+}
+.location_map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background: #7e7366;
+}
+.footer_container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.footer_left{
+    width: 70%;
+    float: left;
+}
+.guide_list{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.guide_list li {
+    float: left;
+    margin-right: 15px;
+}
+.guide_text{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+.footer_address_box{
+    width: 100%;
+    overflow: hidden;
+}
+.under_address{
+    float: left;
+    margin: 0 15px 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.under_address span{
+    margin-right: 8px;
+    font-weight: 200;
+    color: #acacac;
+}
+.copyright{
+    font-size: 12px;
+    font-weight: 200;
+    color: #acacac;
+}
+.footer_right{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+.partners_logo{
+    height: 40px;
+    float: right;
+    line-height: 40px;
+}
+.partners_logo img{
+    max-width: 100px;
+}

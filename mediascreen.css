@@ -1,0 +1,470 @@
+@media screen and (max-width:1080px){
+    .section_title_en{
+        font-size: 40px;
+    }
+    .promo_wrap, .acmd_wrap, .dining_wrap, .location_wrap{
+        margin: 0 auto 140px;
+    }
+    /* header */
+    .menu_btn{
+        width: 25px;
+        height: 20px;
+        left: 35px;
+    }
+    .logo{
+        max-width: 11.5%;
+    }
+    .gnb_bar{
+        right: 35px;
+    }
+    .gnb_bar a{
+        margin-left: 15px;
+        font-size: 11px;
+    }
+    /* main */
+    .menu_container{
+        padding: 13% 5% 0;
+    }
+    .large_menu_list{
+        width: 50%;
+    }
+    .small_menu span{
+        font-size: 12px;
+    }
+    .contact_where{
+        width: 65%;
+    }
+    .contact_number{
+        width: 35%;
+    }
+    .welcome_en{
+        width: 80%;
+        top: 35%;
+        font-size: 58px;
+    }
+    .welcome_ko{
+        top: 45%;
+    }
+    .count_container{
+        width: 27%;
+        bottom: 46%;
+        left: 57%;
+    }
+    .count_choice_box_on{
+        padding: 15% 10% 17%;
+    }
+    .count_title{
+        font-size: 12px;
+    }
+    .result_number{
+        font-size: 14px;
+    }
+    .minus_button{
+        margin-right: 5px;
+    }
+    .count_button{
+        width: 15px;
+        height: 7px;
+    }
+    .more_guide{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    .reserv_bar{
+        width: 90%;
+        height: 55px;
+        top: 55%;
+    }
+    #reserv_type, .reservation_btn{
+        height: 55px;
+        font-size: 14px;
+        line-height: 55px;
+    }
+    .room_date, .room_people, .dining_date, .dining_people, .roomservice_date{
+        height: 55px;
+    }
+    .room_date, .dining_date{
+        padding-left: 3%;
+    }
+    .check_type{
+        font-size: 11px;
+    }
+    .check_result{
+        font-size: 14px;
+    }
+    .check_date{
+        font-size: 14px;
+    }
+    .room_people{
+        padding: 0 3% 0 2%;
+    }
+    .dining_date{
+        width: 52%;
+    }
+    .dining_people{
+        width: 48%;
+        padding: 0 3%;
+    }
+    .roomservice_date{
+        padding: 0 3%;
+    }
+     /* about */
+    .about_wrap{
+        padding: 140px 0 150px;
+    }
+    .about_title{
+        margin: 4px 0 25px;
+        font-size: 16px;
+    }
+    .about_text{
+        font-size: 13px;
+    }
+    /* promotions */
+    .promo_room{
+        padding-right: 3%;
+    }
+    .promo_room_over, .promo_dining .promo_base{
+        margin-bottom: 20px;
+    }
+    .promo_dining{
+        padding-left: 3%;
+    }
+    .promo_over_img, .promo_base_img{
+        height: 180px;
+    }
+    .promo_title_box{
+        margin: 15px 0 10px;
+    }
+    .promo_title{
+        width: 100%;
+        margin-right: 0;
+        font-size: 14px;
+    }
+    .promo_title_sub{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .promo_detail{
+        min-height: 30px;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    /* accommodation */
+    .acmd_container{
+        height: auto;
+        overflow: hidden;
+    }
+    .acmd_left{
+        width: 100%;
+        height: auto;
+    }
+    .acmd_info_viewbox{
+        display: none;
+    }
+    .type_btn{
+        font-size: 16px;
+    }
+    .type_btn_list > .vertical_line{
+        height: 18px;
+        margin: 2px 10px 0;
+    }
+    .acmd_right{
+        width: 100%;
+        height: 70vh;
+        margin-top: 2%;
+        margin-left: 0;
+    }
+    .acmd_right .acmd_pic{
+        border-radius: 50% 50% 0 0;
+    }
+    .acmd_pic_title{
+        left: 9%;
+        bottom: 13%;
+    }
+    .acmd_right > .acmd_pic > .acmd_scrollbar{
+        bottom: 10%;
+        left: 9%;
+    }
+    .acmd_list_bar{
+        bottom: 6%;
+        left: 9%;
+    }
+    .view_detail, .view_reserv{
+        width: 80px;
+    }
+    .acmd_choice{
+        right: 9%;
+    }
+    /* pride */
+    .pride_wrap{
+        margin: 180px auto;
+        background-position: center;
+    }
+    .pride_title_en{
+        margin-bottom: 5px;
+        font-size: 32px;
+    }
+    .pride_title_ko{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .pride_text{
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    /* dining */
+    .dining_pic_list{
+        width: 55%;
+    }
+    .dining_right{
+        width: 42%;
+    }
+    .dining_pic_list, .dining_right{
+        height: 75vh;
+    }
+    .dining_name::before{
+        display: none;
+    }
+    .dining_place_detail{
+        width: 80%;
+        font-size: 13px;
+    }
+    .dining_place_number{
+        font-size: 12px;
+    }
+    .dining_type_btn li::before{
+        display:none;
+    }
+    .dining_deco{
+        font-size: 80px;
+    }
+    /* location */
+    .location_text{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .location_text_tel{
+        font-size: 14px;
+    }
+    .location_map{
+        margin-top: 20px;
+    }
+    /* footer */
+    .footer_left{
+        width: 100%;
+        float: none;
+    }
+    .guide_text, .under_address{
+        font-size: 12px;
+    }
+    .under_address{
+        margin: 0 20px 10px 0;
+    }
+    .copyright{
+        margin-top: 5px;
+    }
+    .footer_right{
+        width: 100%;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:768px) {
+    .section_title_en{
+        font-size: 32px;
+    }
+    .promo_wrap, .acmd_wrap, .dining_wrap, .location_wrap{
+        margin: 0 auto 80px;
+    }
+    /* header */
+    .header_container{
+        height: auto;
+    }
+    .menu_btn{
+        left:5%;
+    }
+    .logo{
+        max-width: 25%;
+    }
+    .gnb_bar{
+        display:none;
+    }
+    /* main */
+    .main_wrap{
+        background-position: right 3% bottom 20%;
+    }
+    .welcome_en{
+        top: 32%;
+        font-size: 56px;
+        line-height: 0.9;
+    }
+    .welcome_ko{
+        top: 50%;
+        font-size: 15px;
+    }
+    .reserv_bar{
+        display: none;
+    }
+    /* main - menu_container */
+    .menu_container{
+        padding: 30% 5% 0;
+    }
+    .large_menu_list li{
+        margin-bottom: 20px;
+    }
+    .large_menu{
+        font-size: 21px;
+        border: none;
+    }
+    .large_menu span{
+        display: none;
+    }
+    .small_menu_area{
+        width: 40%;
+        padding-left: 10%;
+    }
+    .small_menu{
+        border: none;
+        padding-bottom: 0;
+    }
+    .small_menu span{
+        display: none;
+    }
+    .contact_us{
+        display: none;
+    }
+    /* about */
+    .about_wrap{
+        padding: 80px 0 90px;
+    }
+    .about_title{
+        margin: 4px 0 20px;
+        font-size: 15px;
+    }
+    .about_text{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    /* promotion */
+    .promo_container{
+        margin-top: 20px;
+    }
+    .promo_room{
+        width: 100%;
+        padding-right: 0;
+        border: none;
+    }
+    .promo_room .promo_base{
+        display: none;
+    }
+    .promo_dining{
+        width: 100%;
+        padding-left: 0;
+    }
+    .promo_room_over, .promo_dining .promo_base{
+        margin-bottom: 15px;
+    }
+    .promo_over_img, .promo_base_img{
+        height: 120px;
+    }
+    .promo_title_box{
+        margin: 12px 0 8px;
+    }
+    .promo_detail{
+        min-height: auto;
+    }
+    /* accommodation */
+    .type_btn_list{
+        margin-top: 3px;
+    }
+    .type_btn_list > .vertical_line{
+        height: 14px;
+    }
+    .type_btn{
+        font-size: 14px;
+    }
+    .acmd_right{
+        height: 55vh;
+        margin-top: 15px;
+    }
+    .acmd_right .acmd_pic{
+        border-radius: 48% 48% 0 0;
+    }
+    .acmd_pic_title{
+        bottom: 14%;
+        left: 5%;
+    }
+    .acmd_pic_list .swiper-slide img{
+        height: 100%;
+    }
+    .acmd_list_bar{
+        width: 90%;
+        bottom: 4%;
+        left: 5%;
+    }
+    .acmd_right > .acmd_pic > .acmd_scrollbar{
+        width: 90%;
+        bottom: 10%;
+        left: 5%;
+    }
+    .acmd_pic .acmd_next_btn, .acmd_pic .acmd_prev_btn{
+        bottom: 35%;
+    }
+    .acmd_choice{
+        display: none;
+    }
+    .view_detail, .view_reserv{
+        width: 70px;
+        height: 28px;
+        margin-left: 10px;
+        line-height: 28px;
+    }
+    /* pride */
+    .prode_wrap{
+        margin: 130px auto;
+        background-position: center;
+    }
+    /* dining */
+    .dining_pic_list, .dining_right{
+        width: 100%;
+        height: 40vh;
+    }
+    .dining_pic_list_item{
+        background-size: cover;
+        background-position: center center;
+    }
+    .dining_name{
+        margin-bottom: 10px;
+    }
+    .dining_place_detail{
+        margin-bottom: 8px;
+    }
+    .dining_info_list li{
+        left: 5%;
+    }
+    .dining_type_btn{
+        left: 5%;
+        z-index: 9;
+    }
+    .dining_type_btn li{
+        float: left;
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    .dining_deco{
+        bottom: 10%;
+        font-size: 75px;
+        opacity: 0.2;
+    }
+    /* location */
+    .location_map{
+        height: 230px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,165 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* initial css */
+* { 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a,a:link {
+    display:block;
+    text-decoration: none;
+}
+textarea{
+    resize:none;
+}
+
+
+.login-wrap{
+    width:100vw;
+    height:100vh;
+    background:url('/img/main_pic.jpeg') no-repeat;
+    background-size:cover;
+    background-position:left 0 bottom 20%;
+}
+.login-container{
+    width:400px;
+    height:auto;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:rgba(255,255,255,.8);
+    border-radius:7px;
+    padding:50px 0;
+}
+.login-title{
+    margin-bottom:24px;
+}
+.title-back{
+    max-width: 100px;
+    margin: 0 auto;
+}
+.title-back img{
+    max-width: 100px;
+}
+.login-form{
+    margin:0 35px;
+}
+.text-area{
+    width:100%;
+    position:relative;
+    top:0;
+    left:0;
+    margin-bottom:5px;
+}
+.text-area input{
+    width:100%;
+    height:40px;
+    border:none;
+    border-bottom:solid 1px #a9a9a9;
+    outline: none;
+    background:transparent;
+}
+.text-area span::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0%;
+    height:1px;
+    display:block;
+    border-bottom:solid 1px #353535;
+    transition:all .4s;
+}
+.text-area input:focus ~ span::before{
+    width:100%;
+}
+.text-area input:valid ~ span::before{
+    width:100%;
+}
+.text-area label{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    color:#a9a9a9;
+}
+.text-area input:focus ~ label{
+    display:none;
+}
+.text-area input:valid ~ label{
+    display:none;
+}
+.keep-login{
+    position:relative;
+    top:3px;
+    left:0;
+    display:inline-block;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.keep-login input[type="checkbox"]{
+    display:none;
+}
+.keep-login input[type="checkbox"]:checked + .check-txt::before{
+    background:url(/img/check.png) no-repeat;
+    background-size:contain;      
+}
+.check-txt::before{
+    content:'';
+    width:19px;
+    height:19px;
+    position:absolute;
+    top:1px;
+    left:0;
+    margin-right:5px;
+    background:url(/img/uncheck.png) no-repeat;
+    background-size:contain;
+    transition:all .3s;
+}
+.check-txt{
+    margin-left:25px;
+    font-size:13px;
+    font-weight:300;
+}
+.login-button{
+    width:100%;
+    height:50px;
+    display:block;
+    border:none;
+    margin:20px 0 15px;
+    font-size:16px;
+    font-weight:700;
+    transition:all .3s;
+    color: #483f35;
+}
+.login-button:hover{
+    color:#fff;
+    background:#7e7366;
+}
+.finding{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:center;
+}
+.find{
+    position:relative;
+    top:0;
+    left:0;
+    margin-right:10px;
+    font-size:14px;
+    font-weight:300;
+    color:#444;
+}
+.find:last-child{
+    margin-right:0;
+}
