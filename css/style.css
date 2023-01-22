@@ -1090,13 +1090,6 @@ body .daterangepicker .drp-buttons .btn-primary{
     height: 100%;
     border: 0 none;
 }
-.location_map iframe #map-container #locations-panel{
-    display: none;
-}
-.location_map iframe #map-container #gmp-map{
-    width: 100%;
-    left: 0;
-}
 
 /* footer */
 footer{
