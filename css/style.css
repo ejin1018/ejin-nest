@@ -796,7 +796,7 @@ body .daterangepicker .drp-buttons .btn-primary{
     left:0;
 }
 .swiper-slide > img{
-    width: 100%;
+    height: 100%;
 }
 .acmd_pic_title{
     position: absolute;
