@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',function(){
   // 마커가 지도 위에 표시되도록 설정합니다
   marker.setMap(map);
 
-  var iwContent = '<div style="padding:5px;">Nest Hotel <br><a href="https://map.kakao.com/link/map/Nest Hotel,37.4253, 126.4284" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+  var iwContent = '<div style="padding:5px;">Nest Hotel <br><a href="https://map.kakao.com/?urlX=373513.0&urlY=1090917.0&name=Nest+Hotel" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Nest Hotel,37.4253, 126.4284" style="color:blue" target="_blank">길찾기</a></div>',
       iwPosition = new kakao.maps.LatLng(37.4253, 126.4284); //인포윈도우 표시 위치입니다
 
   // 인포윈도우를 생성합니다
