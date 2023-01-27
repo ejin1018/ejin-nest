@@ -17,6 +17,9 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- map api -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bed719e14d2836e06046cb2d4e6ea538"></script>
+    <script src="/ejin-nest/js/kakaomap.js"></script>
 
     <script src="/ejin-nest/js/nest-script.js"></script>
   </head>
@@ -680,9 +683,10 @@
         <h2 class="section_title_en">Location</h2>
         <p class="location_text">인천광역시 중구 영종해안남로 (가나다 0123)</p>
         <a href="#none" class="location_text_tel">Tel. 032 123 0000 / Fax. 032 123 0000</a>
-        <div class="location_map">
+        <!-- <div class="location_map">
           <iframe src="https://storage.googleapis.com/maps-solutions-zf2t9lylno/locator-plus/th8c/locator-plus.html"></iframe>
-        </div>
+        </div> -->
+        <div id="map" class="location_map"></div>
       </div>
     </section>
     <footer>
