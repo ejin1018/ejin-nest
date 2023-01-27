@@ -848,10 +848,10 @@ body .daterangepicker .drp-buttons .btn-primary{
     color: #fff;
 }
 .acmd_pic .acmd_next_btn::after{
-    content: url(/img/acmd_next_btn.png);
+    content: url(/ejin-nest/img/acmd_next_btn.png);
 }
 .acmd_pic .acmd_prev_btn::after{
-    content: url(/img/acmd_prev_btn.png);
+    content: url(/ejin-nest/img/acmd_prev_btn.png);
 }
 .acmd_choice{
     position: absolute;
