@@ -1090,6 +1090,20 @@ body .daterangepicker .drp-buttons .btn-primary{
     height: 100%;
     border: 0 none;
 }
+.map-marker{
+    padding: 5px;
+}
+.marker-address{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #acacac;
+}
+.marker-btn{
+    font-size: 14px;
+    font-weight: 300;
+    color: royalblue;
+}
 
 /* footer */
 footer{
