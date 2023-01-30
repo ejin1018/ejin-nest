@@ -949,20 +949,17 @@ body .daterangepicker .drp-buttons .btn-primary{
     transition: top .5s;
 }
 .dining_pic_list_on::after{
-    top: -100%;
+    top: 0%;
 }
 .dining_pic_list_item{
     width: 100%;
     height: 100%;
     position: absolute;
-    /* top: 100%; */
     left: 0;
     opacity: 0;
-    /* transition: top .5s; */
 }
 .dining_pic_item_on{
     opacity: 1;
-    /* top: 0%; */
     transition: top .5s .5s;
 }
 .dining_pic_platz{
