@@ -1,4 +1,10 @@
 window.onload = function(){
+    function removeAll(obj,clName){
+        obj.forEach((that)=>{
+            that.classList.remove(clName);
+        });
+    }
+
     // main - menu
     let menu = document.querySelector('.menu_btn');
     let menupage = document.querySelector('.menu_container');
@@ -74,34 +80,40 @@ window.onload = function(){
     acmdType.forEach((pic,index)=>{
         pic.addEventListener('click',function(){
             if(index == 0){
-                acmdPic.forEach((picAll)=>{
-                    picAll.classList.remove('acmd_pic_on');
-                });
+                removeAll(acmdPic,'acmd_pic_on');
+                // acmdPic.forEach((picAll)=>{
+                //     picAll.classList.remove('acmd_pic_on');
+                // });
                 stanList.classList.toggle('acmd_pic_on');
 
-                acmdInfo.forEach((infoAll)=>{
-                    infoAll.classList.remove('acmd_info_on');
-                });
+                removeAll(acmdInfo,'acmd_info_on');
+                // acmdInfo.forEach((infoAll)=>{
+                //     infoAll.classList.remove('acmd_info_on');
+                // });
                 stanInfo.classList.toggle('acmd_info_on');
             }else if(index == 1){
-                acmdPic.forEach((picAll)=>{
-                    picAll.classList.remove('acmd_pic_on');
-                });
+                removeAll(acmdPic,'acmd_pic_on')
+                // acmdPic.forEach((picAll)=>{
+                //     picAll.classList.remove('acmd_pic_on');
+                // });
                 deluxeList.classList.toggle('acmd_pic_on');
 
-                acmdInfo.forEach((infoAll)=>{
-                    infoAll.classList.remove('acmd_info_on');
-                });
+                removeAll(acmdInfo,'acmd_info_on');
+                // acmdInfo.forEach((infoAll)=>{
+                //     infoAll.classList.remove('acmd_info_on');
+                // });
                 deluxeInfo.classList.add('acmd_info_on');
             }else if(index == 2){
-                acmdPic.forEach((picAll)=>{
-                    picAll.classList.remove('acmd_pic_on');
-                });
+                removeAll(acmdPic,'acmd_pic_on');
+                // acmdPic.forEach((picAll)=>{
+                //     picAll.classList.remove('acmd_pic_on');
+                // });
                 suiteList.classList.toggle('acmd_pic_on');
 
-                acmdInfo.forEach((infoAll)=>{
-                    infoAll.classList.remove('acmd_info_on');
-                });
+                removeAll(acmdInfo,'acmd_info_on');
+                // acmdInfo.forEach((infoAll)=>{
+                //     infoAll.classList.remove('acmd_info_on');
+                // });
                 suiteInfo.classList.add('acmd_info_on');
             }
         });
