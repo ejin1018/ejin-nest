@@ -996,11 +996,12 @@ body .daterangepicker .drp-buttons .btn-primary{
     left: 12%;
     opacity: 0;
     background: #7e7366;
+    transition: top .5s, opacity .4s .4s;
 }
 .dining_info_list .dining_info_on{
     top:0;
     opacity: 1;
-    transition:top .4s .5s;
+    transition:top .4s .9s, opacity .4s .9s;
 }
 .dining_name{
     position: relative;
