@@ -153,10 +153,9 @@ window.onload = function(){
 
             function curtain(){
                 picUl.classList.add('dining_pic_list_on');
-                console.log(picUlAfter);
                 setTimeout(function(){
                     picUl.classList.remove('dining_pic_list_on');
-                },1000);
+                },500);
             }
             curtain();
         });
