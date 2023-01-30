@@ -796,7 +796,7 @@ body .daterangepicker .drp-buttons .btn-primary{
     left:0;
 }
 .swiper-slide > img{
-    height: 150%;
+    object-fit: cover;
 }
 .acmd_pic_title{
     position: absolute;
@@ -1104,7 +1104,7 @@ body .daterangepicker .drp-buttons .btn-primary{
     font-size: 14px;
     font-weight: 300;
     line-height: 1.6;
-    text-indent: -2.8px;
+    letter-spacing: -0.3px;
     color: #acacac;
 }
 .map-marker .marker-btn{

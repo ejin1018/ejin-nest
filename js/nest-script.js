@@ -81,39 +81,21 @@ window.onload = function(){
         pic.addEventListener('click',function(){
             if(index == 0){
                 removeAll(acmdPic,'acmd_pic_on');
-                // acmdPic.forEach((picAll)=>{
-                //     picAll.classList.remove('acmd_pic_on');
-                // });
                 stanList.classList.toggle('acmd_pic_on');
 
                 removeAll(acmdInfo,'acmd_info_on');
-                // acmdInfo.forEach((infoAll)=>{
-                //     infoAll.classList.remove('acmd_info_on');
-                // });
                 stanInfo.classList.toggle('acmd_info_on');
             }else if(index == 1){
                 removeAll(acmdPic,'acmd_pic_on')
-                // acmdPic.forEach((picAll)=>{
-                //     picAll.classList.remove('acmd_pic_on');
-                // });
                 deluxeList.classList.toggle('acmd_pic_on');
 
                 removeAll(acmdInfo,'acmd_info_on');
-                // acmdInfo.forEach((infoAll)=>{
-                //     infoAll.classList.remove('acmd_info_on');
-                // });
                 deluxeInfo.classList.add('acmd_info_on');
             }else if(index == 2){
                 removeAll(acmdPic,'acmd_pic_on');
-                // acmdPic.forEach((picAll)=>{
-                //     picAll.classList.remove('acmd_pic_on');
-                // });
                 suiteList.classList.toggle('acmd_pic_on');
 
                 removeAll(acmdInfo,'acmd_info_on');
-                // acmdInfo.forEach((infoAll)=>{
-                //     infoAll.classList.remove('acmd_info_on');
-                // });
                 suiteInfo.classList.add('acmd_info_on');
             }
         });
@@ -135,44 +117,53 @@ window.onload = function(){
     dinType.forEach((dinbtn,index)=>{
         dinbtn.addEventListener('click',function(){
             if(index == 0){
-                picList.forEach((ture)=>{
-                    ture.classList.remove('dining_pic_item_on');
-                });
+                removeAll(picList,'dining_pic_item_on');
+                // picList.forEach((ture)=>{
+                //     ture.classList.remove('dining_pic_item_on');
+                // });
                 picPlatz.classList.add('dining_pic_item_on');
                 
-                dinInfo.forEach((dinText)=>{
-                    dinText.classList.remove('dining_info_on');
-                });
+                removeAll(dinInfo,'dining_info_on');
+                // dinInfo.forEach((dinText)=>{
+                //     dinText.classList.remove('dining_info_on');
+                // });
                 infoPlatz.classList.add('dining_info_on');
             }else if(index == 1){
-                picList.forEach((ture)=>{
-                    ture.classList.remove('dining_pic_item_on');
-                });
+                removeAll(picList,'dining_pic_item_on')
+                // picList.forEach((ture)=>{
+                //     ture.classList.remove('dining_pic_item_on');
+                // });
                 picKunst.classList.add('dining_pic_item_on');
                 
-                dinInfo.forEach((dinText)=>{
-                    dinText.classList.remove('dining_info_on');
-                });
+                removeAll(dinInfo,'dining_info_on')
+                // dinInfo.forEach((dinText)=>{
+                //     dinText.classList.remove('dining_info_on');
+                // });
                 infoKunst.classList.add('dining_info_on');
             }else if(index == 2){
-                picList.forEach((ture)=>{
-                    ture.classList.remove('dining_pic_item_on');
-                });
+                
+                removeAll(picList,'dining_pic_item_on');
+                // picList.forEach((ture)=>{
+                //     ture.classList.remove('dining_pic_item_on');
+                // });
                 picLuft.classList.add('dining_pic_item_on');
                 
-                dinInfo.forEach((dinText)=>{
-                    dinText.classList.remove('dining_info_on');
-                });
+                removeAll(dinInfo,'dining_info_on');
+                // dinInfo.forEach((dinText)=>{
+                //     dinText.classList.remove('dining_info_on');
+                // });
                 infoLuft.classList.add('dining_info_on');
             }else if(index == 3){
-                picList.forEach((ture)=>{
-                    ture.classList.remove('dining_pic_item_on');
-                });
+                removeAll(picList,'dining_pic_item_on')
+                // picList.forEach((ture)=>{
+                //     ture.classList.remove('dining_pic_item_on');
+                // });
                 picRoom.classList.add('dining_pic_item_on');
                 
-                dinInfo.forEach((dinText)=>{
-                    dinText.classList.remove('dining_info_on');
-                });
+                removeAll(dinInfo,'dining_info_on')
+                // dinInfo.forEach((dinText)=>{
+                //     dinText.classList.remove('dining_info_on');
+                // });
                 infoRoom.classList.add('dining_info_on');
             };
 
