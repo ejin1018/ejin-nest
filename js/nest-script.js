@@ -151,7 +151,7 @@ window.onload = function(){
             dinbtn.classList.add('dining_type_on');
 
             picUl.classList.remove('.dining_pic_list_on');
-            picUl.classList.add('.dining_pic_list_on');
+            picUl.classList.add('dining_pic_list_on');
         });
     });
 
