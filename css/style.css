@@ -939,6 +939,7 @@ body .daterangepicker .drp-buttons .btn-primary{
     background: #7e7366;
 }
 .dining_pic_list::after{
+    content: '';
     position: absolute;
     top: 100%;
     left: 0;
