@@ -103,6 +103,7 @@ window.onload = function(){
     
     // dining 
     let dinType = document.querySelectorAll('.dining_type');
+    let picUl = document.querySelector('.dining_pic_list');
     let picList = document.querySelectorAll('.dining_pic_list_item');
     let picPlatz = document.querySelector('.dining_pic_platz');
     let picKunst = document.querySelector('.dining_pic_kunst');
@@ -129,7 +130,6 @@ window.onload = function(){
                 removeAll(dinInfo,'dining_info_on')
                 infoKunst.classList.add('dining_info_on');
             }else if(index == 2){
-                
                 removeAll(picList,'dining_pic_item_on');
                 picLuft.classList.add('dining_pic_item_on');
                 
@@ -149,6 +149,9 @@ window.onload = function(){
                 }
             }
             dinbtn.classList.add('dining_type_on');
+
+            picUl.classList.remove('.dining_pic_list_on');
+            picUl.classList.add('.dining_pic_list_on');
         });
     });
 
