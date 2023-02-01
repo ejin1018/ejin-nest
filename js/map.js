@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',function(){
   });
   marker.setMap(map);
   var iwContent = '<div class="map-marker"><p class="map-name">네스트호텔</p><a href="https://map.kakao.com/?urlX=373513.0&urlY=1090917.0&name=Nest+Hotel" target="_blank" class="marker-btn">큰지도보기</a> <a href="https://map.kakao.com/link/to/Nest Hotel,37.4253, 126.4284" target="_blank" class="marker-btn">길찾기</a></div>',
-      iwPosition = new kakao.maps.LatLng(37.4253, 126.4284); //인포윈도우 표시 위치입니다
+      iwPosition = new kakao.maps.LatLng(37.4253, 126.4284);
   var infowindow = new kakao.maps.InfoWindow({
       position : iwPosition, 
       content : iwContent 
